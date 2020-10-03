@@ -33,7 +33,7 @@ const Detail = {
       loading.style.display = 'none';
       window.scrollTo(0, 0);
 
-      LikeButtonInitiator.init({
+      await LikeButtonInitiator.init({
         likeButtonContainer: document.querySelector('#likeButtonContainer'),
         restaurant: {
           id: data.restaurant.id,
@@ -45,7 +45,7 @@ const Detail = {
         },
       });
 
-      FormReviewInitiator.init({
+      await FormReviewInitiator.init({
         formReviewContainer: document.querySelector('#formReviewContainer'),
         id: data.restaurant.id,
       });
