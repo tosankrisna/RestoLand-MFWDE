@@ -1,0 +1,159 @@
+@media screen and (max-width: 505px) {
+  nav {
+    z-index: 10;
+    background-color: #fff;
+    width: 300px;
+    top: 0;
+    height: 100vh;
+    position: fixed;
+    -webkit-transform: translate(-300px, 0);
+    transform: translate(-300px, 0);
+    transition: transform 0.3s ease;
+  }
+
+  .open {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+
+  .nav-list {
+    padding: 20px;
+    display: list-item;
+    text-align: left;
+  }
+
+  .nav-item {
+    border-bottom: 1px solid #c2c2c2;
+  }
+
+  .nav-item a {
+    color: #000;
+  }
+
+  error-message h1,
+  favorite-message h1 {
+    font-size: 20px;
+  }
+  
+  error-message p,
+  favorite-message p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 506px) {
+  .hamburger-menu {
+    display: none;
+  }
+
+  .logo {
+    width: 30%;
+  }
+
+  #drawer {
+    width: 70%;
+  }
+
+  .nav-item {
+    width: 20%;
+  }
+
+  .card-list .card {
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .nav-item a {
+    font-size: 1em;
+  }
+
+  p.welcome-text {
+    font-size: 1.5em;
+  }
+
+  .hero h1.title {
+    font-size: 5em;
+  }
+
+  .hero p.tagline {
+    font-size: 1.2em;
+  }
+
+  .list-restaurant .title {
+    font-size: 32px;
+  }
+
+  .image-gallery img {
+    width: 300px;
+  }
+
+  .detail-img img {
+    width: 700px;
+  }
+
+  .detail-content {
+    display: flex;
+  }
+
+  .detail-restaurant {
+    flex: 1;
+  }
+
+  .description-restaurant {
+    font-size: 16px;
+  }
+
+  .review-card {
+    width: 30%;
+  }
+
+  .detail-title {
+    font-size: 32px;
+  }
+
+  .title-restaurant {
+    font-size: 24px;
+  }
+
+  .category-name {
+    width: 15%;
+  }
+
+  .review-name {
+    font-size: 20px;
+  }
+
+  .review-title {
+    font-size: 32px;
+  }
+
+  .location-restaurant {
+    font-size: 16px;
+  }
+
+  .detail-form h1 {
+    font-size: 32px;
+  }
+
+  .detail-form form {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .nav-item {
+    width: 15%;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .nav-item {
+    width: 12%;
+  }
+
+  main .content {
+    margin: auto;
+    max-width: 1200px;
+  }
+}
