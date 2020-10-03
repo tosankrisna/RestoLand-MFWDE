@@ -12,7 +12,7 @@ const Detail = {
         <loading-indicator></loading-indicator>
         <div class="detail-content"></div>
         <div class="detail-form">
-          <h1>Tambahkan review</h1>
+          <h1 class="add-review-title">Tambahkan review</h1>
           <div id="formReviewContainer"></div>
         </div>
         <div id="likeButtonContainer"></div>
@@ -25,12 +25,14 @@ const Detail = {
     const restaurantContainer = document.querySelector('.detail-content');
     const detailForm = document.querySelector('.detail-form');
     const loading = document.querySelector('.loader');
+    const addReviewTitle = document.querySelector('.add-review-title');
 
     try {
       const data = await RestaurantDbSource.detailRestaurant(url.id);
       restaurantContainer.innerHTML = createRestaurantDetailTemplate(data.restaurant);
 
       loading.style.display = 'none';
+      addReviewTitle.style.display = 'block';
       window.scrollTo(0, 0);
 
       await LikeButtonInitiator.init({

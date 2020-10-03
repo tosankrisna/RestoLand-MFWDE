@@ -409,6 +409,10 @@ favorite-message p {
     font-size: 24px;
   }
 
+  .add-review-title {
+    display: none;
+  }
+
   .review-container {
     width: 100%;
     justify-content: center;
