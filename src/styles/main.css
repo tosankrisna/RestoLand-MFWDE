@@ -431,6 +431,7 @@ favorite-message p {
   .review-name {
     margin: 15px 0;
     font-size: 18px;
+    font-weight: bold;
     font-family: 'Montserrat', sans-serif;
     overflow: hidden;
     text-overflow: ellipsis;

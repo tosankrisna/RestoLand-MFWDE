@@ -7,7 +7,7 @@ const createRestaurantDetailTemplate = (restaurant) => `
     </div>
     <div class="detail-content">
       <div class="detail-restaurant">
-        <h2 class="title-restaurant">${restaurant.name}</h2>
+        <h1 class="title-restaurant">${restaurant.name}</h1>
         <div class="rating">
           <i class="fas fa-star"></i>
           <p>${restaurant.rating}</p>
@@ -16,17 +16,17 @@ const createRestaurantDetailTemplate = (restaurant) => `
         <p class="location-restaurant"><i class="fas fa-map-marker-alt"></i>${restaurant.address}, ${restaurant.city}</p>
       </div>
       <div class="detail-menu">
-        <h3 class="detail-menu-title">Kategori</h3>
+        <p class="detail-menu-title">Kategori</p>
         ${restaurant.categories.map((categori) => `
           <span class="category-name">${categori.name}</span>
         `).join('')}
 
-        <h3 class="detail-menu-title">Daftar makanan</h3>
+        <p class="detail-menu-title">Daftar makanan</p>
         ${restaurant.menus.foods.map((food) => `
           <span class="food-name">${food.name}</span>
         `)}
 
-        <h3 class="detail-menu-title">Daftar minuman</h3>
+        <p class="detail-menu-title">Daftar minuman</p>
         ${restaurant.menus.drinks.map((drink) => `
           <span class="drink-name">${drink.name}</span>
         `)}
@@ -38,7 +38,7 @@ const createRestaurantDetailTemplate = (restaurant) => `
         ${restaurant.consumerReviews.map((review) => `
           <div class="review-card">
             <i class="far fa-user fa-2x"></i>
-            <h3 class="review-name">${review.name}</h3>
+            <p class="review-name">${review.name}</p>
             <p class="review-date">${review.date}</p>
             <p class="review-comment">"${review.review}"</p>
           </div>
@@ -81,10 +81,10 @@ const createLikedButtonTemplate = () => `
 
 const createFormReviewTemplate = () => `
   <form>
-    <label for="nama">Nama</label>
-    <input type="text" name="nama" class="inputName" placeholder="Masukan nama">
-    <label for="review">Review</label>
-    <textarea name="review" class="inputReview" placeholder="Masukan review"></textarea>
+    <label for="inputName">Nama</label>
+    <input type="text" name="nama" class="inputName" id="inputName" placeholder="Masukan nama">
+    <label for="inputReview">Review</label>
+    <textarea name="review" class="inputReview" id="inputReview" placeholder="Masukan review"></textarea>
     <button type="submit" class="btnSubmit">Kirim</button>
   </form>
 `;

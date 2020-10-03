@@ -47,7 +47,7 @@ const FormReviewInitiator = {
     const dataReview = `
       <div class="review-card">
         <i class="far fa-user fa-2x"></i>
-        <h3 class="review-name">${name}</h3>
+        <p class="review-name">${name}</p>
         <p class="review-date">${date}</p>
         <p class="review-comment">"${review}"</p>
       </div>
