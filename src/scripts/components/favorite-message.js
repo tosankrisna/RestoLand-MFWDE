@@ -7,7 +7,7 @@ class FavoriteMessage extends HTMLElement {
     this.innerHTML = `
       <div>
         <h1>Data tidak tersedia!</h1>
-        <p>Silahkan tambahkan restoran favorit di halaman detail restoran</p>
+        <p class="fav-page-msg">Data restaurant favorit tidak ditemukan</p>
       </div>
     `;
   }

@@ -24,6 +24,7 @@
         "no-prototype-builtins": "off",
         "eol-last": "off",
         "consistent-return": "off",
-        "import/prefer-default-export": "off"
+        "import/prefer-default-export": "off",
+        "comma-dangle": "off"
     }
 }

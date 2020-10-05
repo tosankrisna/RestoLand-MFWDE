@@ -40,7 +40,7 @@ const createRestaurantDetailTemplate = (restaurant) => `
             <i class="far fa-user fa-2x"></i>
             <p class="review-name">${review.name}</p>
             <p class="review-date">${review.date}</p>
-            <p class="review-comment">"${review.review}"</p>
+            <p class="review-comment">${review.review}</p>
           </div>
         `).join('')}
       </div>
@@ -49,21 +49,23 @@ const createRestaurantDetailTemplate = (restaurant) => `
 `;
 
 const createRestaurantItemTemplate = (restaurant) => `
-  <article class="card">
-    <a href="/#/detail/${restaurant.id}">
-      <figure class="card-image">
-        <img src=${API_ENDPOINT.IMG_RESTAURANT}/${restaurant.pictureId} alt=${restaurant.name} crossorigin="anonymous" />
-      </figure>
-      <div class="card-content">
-        <div class="rating">
-          <i class="fas fa-star"></i>
-          <p>${restaurant.rating}</p>
-        </div>
-        <h1 class="card-title">${restaurant.name}</h1>
-        <p class="card-city">${restaurant.city}</p>
-        <p class="card-description">${restaurant.description}</p>
+  <article class="card card-restaurant-item">
+    <figure class="card-image">
+      <img src=${API_ENDPOINT.IMG_RESTAURANT}/${restaurant.pictureId} alt=${restaurant.name} crossorigin="anonymous" />
+    </figure>
+    <div class="card-content">
+      <div class="rating">
+        <i class="fas fa-star"></i>
+        <p>${restaurant.rating}</p>
       </div>
-    </a>
+      <h1 class="card-title">
+        <a href="/#/detail/${restaurant.id}" class="card-restaurant-link">
+          ${restaurant.name}
+        </a>
+      </h1>
+      <p class="card-city">${restaurant.city}</p>
+      <p class="card-description">${restaurant.description}</p>
+    </div>
   </article>
 `;
 

@@ -34,7 +34,6 @@ const FormReviewInitiator = {
       } else {
         await RestaurantDbSource.reviewRestaurant(reviewData);
         form.reset();
-        alert('Review berhasil ditambahkan!');
         this._renderReview(reviewData.name, reviewData.review);
       }
     });
@@ -49,7 +48,7 @@ const FormReviewInitiator = {
         <i class="far fa-user fa-2x"></i>
         <p class="review-name">${name}</p>
         <p class="review-date">${date}</p>
-        <p class="review-comment">"${review}"</p>
+        <p class="review-comment">${review}</p>
       </div>
     `;
 

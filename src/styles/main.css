@@ -175,6 +175,10 @@
   text-decoration: none;
 }
 
+.card-restaurant-link {
+  color: #000;
+}
+
 .card-list .card .card-image {
   border-radius: 10px;
   overflow: hidden;
