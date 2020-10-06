@@ -109,7 +109,7 @@
       rgba(0, 0, 0, 0.651),
       rgba(0, 0, 0, 0.856)
     ),
-    url('../public/images/heros/hero-image_2.jpg');
+    url('/images/hero-image_2-small.jpg');
   background-position: center;
   background-size: cover;
 }

@@ -61,6 +61,17 @@
   .card-list .card {
     width: 300px;
   }
+} 
+
+@media screen and (min-width: 601px) {
+  .hero {
+    background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.651),
+      rgba(0, 0, 0, 0.856)
+    ),
+    url('/images/hero-image_2-large.jpg');
+  }
 }
 
 @media screen and (min-width: 700px) {
