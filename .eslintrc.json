@@ -26,6 +26,8 @@
         "consistent-return": "off",
         "import/prefer-default-export": "off",
         "comma-dangle": "off",
-        "padded-blocks": "off"
+        "padded-blocks": "off",
+        "prefer-destructuring": "off",
+        "no-plusplus": "off"
     }
 }

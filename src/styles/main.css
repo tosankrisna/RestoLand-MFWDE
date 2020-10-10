@@ -207,7 +207,7 @@
   margin-left: 5px;
 }
 
-.rating svg {
+.rating {
   color: #e75b10;
 }
 
@@ -371,19 +371,20 @@ favorite-message p {
     font-size: 14px;
   }
 
-  .location-restaurant svg {
+  .location-restaurant i {
     margin-right: 10px;
     color: #e75b10;
   }
 
   .detail-menu {
     flex: 1;
-    padding: 0 30px;
+    padding: 0 20px;
   }
 
   .detail-menu-title {
     font-family: 'Montserrat', sans-serif;
     margin: 10px 0;
+    font-weight: bold;
   }
 
   .category-name {
