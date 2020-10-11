@@ -55,11 +55,7 @@ const createSkeletonRestaurantTemplate = (count) => {
     template += `
       <article class="card card-restaurant-item">
         <figure class="card-image">
-          <img src="./images/placeholder-large.jpg"
-            srcset="./images/placeholder-small.jpg 480w, ./images/placeholder-large.jpg 800w"
-            sizes="(max-width: 600px) 480px, 800px"
-            alt="skeleton"
-            crossorigin="anonymous" />
+          <img src="./placeholder.png" alt="skeleton" crossorigin="anonymous" />
         </figure>
         <div class="card-content">
           <div class="rating">

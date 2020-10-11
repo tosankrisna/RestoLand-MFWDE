@@ -28,4 +28,4 @@ exports.config = {
       enabled: true
     }
   }
-}
+};
