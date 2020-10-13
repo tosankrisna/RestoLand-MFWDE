@@ -1,5 +1,4 @@
 import 'regenerator-runtime'; /* for async await transpile */
-import '@fortawesome/fontawesome-free/css/all.min.css';
 import '../styles/main.css';
 import '../styles/responsive.css';
 import './components/navigation-bar';

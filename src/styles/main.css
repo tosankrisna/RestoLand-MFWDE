@@ -1,11 +1,13 @@
 @font-face {
   font-family: 'Montserrat';
   src: url('../public/fonts/Montserrat-Regular.ttf');
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Lato';
   src: url('../public/fonts/Lato-Regular.ttf');
+  font-display: swap;
 }
 
 * {
@@ -209,6 +211,7 @@
 
 .rating {
   color: #e75b10;
+  align-items: center;
 }
 
 .card-title {
@@ -369,9 +372,11 @@ favorite-message p {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 14px;
+    align-items: center;
+    display: flex;
   }
 
-  .location-restaurant i {
+  .location-restaurant span {
     margin-right: 10px;
     color: #e75b10;
   }
@@ -431,6 +436,10 @@ favorite-message p {
     margin: 20px;
     text-align: center;
     width: 90%;
+  }
+
+  .review-card span {
+    font-size: 50px;
   }
 
   .review-name {

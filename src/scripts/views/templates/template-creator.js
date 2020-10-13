@@ -9,11 +9,11 @@ const createRestaurantDetailTemplate = (restaurant) => `
       <div class="detail-restaurant">
         <h1 class="title-restaurant">${restaurant.name}</h1>
         <div class="rating">
-          <i class="fas fa-star"></i>
+          <span class="material-icons">grade</span>
           <p>${restaurant.rating}</p>
         </div>
         <p class="description-restaurant">${restaurant.description}</p>
-        <p class="location-restaurant"><i class="fas fa-map-marker-alt"></i>${restaurant.address}, ${restaurant.city}</p>
+        <p class="location-restaurant"><span class="material-icons">location_on</span>${restaurant.address}, ${restaurant.city}</p>
       </div>
       <div class="detail-menu">
         <p class="detail-menu-title">Kategori</p>
@@ -37,7 +37,7 @@ const createRestaurantDetailTemplate = (restaurant) => `
       <div class="review-container">
         ${restaurant.consumerReviews.map((review) => `
           <div class="review-card">
-            <i class="far fa-user fa-2x"></i>
+            <span class="material-icons">account_circle</span>
             <p class="review-name">${review.name}</p>
             <p class="review-date">${review.date}</p>
             <p class="review-comment">${review.review}</p>
@@ -59,7 +59,7 @@ const createSkeletonRestaurantTemplate = (count) => {
         </figure>
         <div class="card-content">
           <div class="rating">
-            <i class="fas fa-star"></i>
+            <span class="material-icons">grade</span>
             <p>5</p>
           </div>
           <h1 class="card-title">
@@ -83,7 +83,7 @@ const createRestaurantItemTemplate = (restaurant) => `
     </figure>
     <div class="card-content">
       <div class="rating">
-        <i class="fas fa-star"></i>
+        <span class="material-icons">grade</span>
         <p>${restaurant.rating}</p>
       </div>
       <h1 class="card-title">
@@ -99,13 +99,13 @@ const createRestaurantItemTemplate = (restaurant) => `
 
 const createLikeRestaurantButtonTemplate = () => `
   <button aria-label="like this restaurant" id="likeButton" class="like">
-    <i class="far fa-heart" aria-hidden="true"></i>
+    <span class="material-icons">favorite_border</span>
   </button>
 `;
 
 const createUnlikeRestaurantButtonTemplate = () => `
   <button aria-label="unlike this restaurant" id="likeButton" class="like">
-    <i class="fas fa-heart" aria-hidden="true"></i>
+    <span class="material-icons">favorite</span>
   </button>
 `;
 
